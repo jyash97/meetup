@@ -1,0 +1,156 @@
+.header{
+  width: 100%;
+  background: #ff4757;
+  padding: 20px 0;
+  max-height: 150px;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+h1{
+  text-align: center;
+  color: #f1f2f6;
+}
+
+.filters{
+  width: 75%;
+  margin: 0 auto;
+  background: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dropdown-field{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dropdown-field > div{
+  width: calc(50% - 5px);
+	border-radius: 4px;
+	background-color: transparent;
+}
+
+.dropdown-field input , .dropdown-field button{
+  border-radius: 4px;
+}
+
+.search {
+	width: calc(40% - 10px);
+	border-radius: 4px;
+}
+
+.reactive-map{
+  height: calc(100vh - 150px);
+  top: 150px;
+  position: fixed;
+}
+
+.reactive-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list-container{
+  top: 150px;
+  overflow-y: scroll;
+  position: fixed;
+  width: calc(50% - 5px);
+  height: calc(100vh - 150px);
+}
+
+.map-container{
+  height: calc(100vh - 150px);
+  position: fixed;
+  right: 0;
+  z-index: 0;
+  width: calc(50% - 5px);
+}
+
+.user-container{
+  width: 95%;
+  margin: 10px auto;
+  background: #f1f2f6;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.user-container .user-image{
+  overflow: hidden;
+  width: 15%;
+  position: relative;
+}
+
+.user-image img{
+  margin: 0 auto;
+  width: 75px;
+  position: absolute;
+  height: 75px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+}
+
+.user-container .user-profile{
+  padding: 5px;
+  width: 85%;
+}
+
+@media (max-width: 1250px) {
+  .filters{
+    width: 100%;
+  }
+  .user-container{
+    width: 100%;
+  }
+}
+
+.responsive{
+  visibility: hidden;
+  display: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #ccc;
+  background: white;
+  margin: 10px auto;
+}
+
+@media (max-width: 1048px){
+  .responsive{
+    display: inline-block;
+    visibility: visible;
+  }
+  .reactive-map{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+  }
+  .user-container .user-image{
+    width: 0;
+  }
+  .user-container .user-profile{
+    width: 100%;
+  }
+  .map-container{
+    width:35%;
+    display: block;
+
+  }
+  .list-container{
+    width:65%;
+    display: block;
+  }
+  .user-profile h3{
+    font-size: 18px;
+  }
+}
