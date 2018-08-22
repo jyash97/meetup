@@ -101,8 +101,17 @@ h1{
 }
 
 .user-container .user-profile{
-  padding: 5px;
+  padding: 10px;
   width: 85%;
+}
+
+.user-profile h3{
+  margin-bottom: 5px;
+}
+
+.user-profile p{
+  margin-top: 5px;
+  padding: 0;
 }
 
 @media (max-width: 1250px) {

@@ -14,7 +14,7 @@ class App extends Component {
         mapKey="AIzaSyBQdVcKCe0q_vOBDUvJYpzwGpt_d_uTj4Q"
         theme={{
           typography: {
-            fontFamily: "Montserrat"
+            fontFamily: "Muli"
           },
           colors: {
             primaryColor: "#ff4757"
